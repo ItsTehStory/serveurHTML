@@ -16,7 +16,7 @@
 		// sql to create table
 		$sql = "CREATE TABLE events (
 		nom VARCHAR(30) PRIMARY KEY,
-		typesport VARCHAR(30) NOT NULL, 	//nom, choix sport, nb personne, time and date, position (lat et lgt)
+		typesport VARCHAR(30) NOT NULL, 
 		nombrepersonne int NOT NULL,
 		heure VARCHAR(30)NOT NULL,
 		date VARCHAR(30)NOT NULL,
