@@ -4,7 +4,7 @@
 		echo "Voici la réponse";
 		return;
 	}else{
-		echo "Ceci n'est pas ce que je veux voir";
+		echo $_POST["id"];
 	}
-	echo "Maxime est cho";
+	echo "<--- id";
 }?>
