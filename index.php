@@ -11,10 +11,12 @@
 // define variables and set to empty values
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
 $name = $email = $gender = $comment = $website = "";
+$maxime = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
     $nameErr = "Name is required";
+	$maxime = "Maxime";
   } else {
     $name = test_input($_POST["name"]);
   }
@@ -33,7 +35,7 @@ function test_input($data) {
 <p><span class="error">* required field.</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   Name: <input type="text" name="name">
-  <span class="error">* <?php echo $nameErr;?></span>
+  <span class="error">* <?php echo $nameErr;echo $maxime;?></span>
   <br><br>
   <input type="submit" name="submit" value="Submit">  
 </form>
