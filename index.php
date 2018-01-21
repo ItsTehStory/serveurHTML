@@ -20,7 +20,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     $name = test_input($_POST["name"]);
   }
-  
+  echo "Voici la réponse";
+  return "Voici un return";
 }
 
 function test_input($data) {

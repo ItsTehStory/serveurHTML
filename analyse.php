@@ -1,1 +1,5 @@
-<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+<?php 
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  echo "Voici la réponse";
+  return "Voici un return";
+}?>
